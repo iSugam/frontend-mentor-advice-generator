@@ -1,5 +1,5 @@
 let adviceID = document.querySelector(".id-num")
-let adviceText = document.querySelector(".advice-text p")
+let adviceText = document.getElementById("text")
 
 const getAdvice = async () => {
     try {
