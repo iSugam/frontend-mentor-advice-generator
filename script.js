@@ -9,7 +9,7 @@ const getAdvice = async () => {
         adviceID.innerText = `#${result.slip.id}`;
         adviceText.innerText = `"${result.slip.advice}"`;
     } catch(err) {
-        adviceText.innerText = err.message;
+        console.log(err);
     }
 }
 
