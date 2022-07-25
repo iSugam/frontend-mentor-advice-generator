@@ -26,10 +26,11 @@ body {
     text-align: center;
     height: max-content;
     display: grid;
-    border-radius: 25px;
+    border-radius: 15px;
     gap: 20px;
     background-color: hsl(217, 19%, 24%);
     padding: 3rem;
+    margin-top: -25px;
     box-shadow: 0 10px 40px rgb(0 0 0 / .2);
     position: relative;
 }
@@ -40,7 +41,7 @@ body {
     font-size: 12px;
 }
 .container .advice-id span {
-    margin: 0 1px;
+    letter-spacing: 4px;
 }
 
 .container .advice-id .id-num {
@@ -100,6 +101,7 @@ body {
 
     .container {
         width: 90%;
+        margin: 0 auto;
         margin-top: 20vh;
         padding: 3rem 1.5rem;
         border-radius: 12px;
@@ -118,12 +120,12 @@ body {
     /****** DIVIDER Image MOBILE ******/
     .mobile-divider {
         display: block;
+        margin-left: -3px;
     }
 
     .mobile-divider img {
         width: 295px;
         height: 16px;
-        margin-left: -3px;
     }
     .attribution { 
         top: 110%;
