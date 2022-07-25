@@ -1,0 +1,156 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(218, 23%, 16%);
+}
+
+/**************** Container Style ****************/
+.container {
+    width: 550px;
+    text-align: center;
+    height: max-content;
+    display: grid;
+    border-radius: 25px;
+    gap: 20px;
+    background-color: hsl(217, 19%, 24%);
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgb(0 0 0 / .2);
+    position: relative;
+}
+
+/****** Advice ID ******/
+.container .advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+}
+.container .advice-id span {
+    margin: 0 1px;
+}
+
+.container .advice-id .id-num {
+    margin-left: 10px;
+}
+
+/****** Advice TEXT ******/
+.container .advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/****** DIVIDER Image DESKTOP ******/
+.desktop-divider {
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+.desktop-divider img {
+    width: 100%;
+}
+
+/****** DIVIDER Image MOBILE ******/
+.mobile-divider {
+    display: none;
+}
+
+/* DICE Icon */
+.dice-icon {
+    position: absolute;
+    top: calc(100% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.dice-icon:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 20px hsl(150, 100%, 66%),
+                inset 0 0 10px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 586px) {
+
+    body {
+        min-height: 100%;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 20vh;
+        padding: 3rem 1.5rem;
+        border-radius: 12px;
+    }
+
+    /****** Advice TEXT ******/
+    .container .advice-text {
+        color: hsl(193, 38%, 86%);
+        font-size: 24px;
+    }
+
+    /****** DIVIDER Image DESKTOP ******/
+    .desktop-divider {
+        display: none;
+    }
+    /****** DIVIDER Image MOBILE ******/
+    .mobile-divider {
+        display: block;
+    }
+
+    .mobile-divider img {
+        width: 295px;
+        height: 16px;
+        margin-left: -3px;
+    }
+    .attribution { 
+        top: 110%;
+    }
+}
+
+@media (max-width: 375px) {
+    .mobile-divider {
+        width: inherit;
+    }
+
+    .mobile-divider img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin-left: 0;
+    }
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 0;
+    color: #fff;
+    font-weight: 300;
+}
+
+.attribution a { 
+    color: hsl(159, 100%, 50%); 
+}
