@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/iSugam/frontend-mentor-advice-generator)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://isugam.github.io/frontend-mentor-advice-generator/)
 
 ## My process
 
