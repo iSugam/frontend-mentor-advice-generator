@@ -1,6 +1,7 @@
 let adviceID = document.querySelector(".id-num");
 let adviceText = document.getElementById("text");
 
+// Get random advice on Load
 const getAdvice = async () => {
     try {
         const response = await fetch("https://api.adviceslip.com/advice", {method: "GET"});
@@ -12,5 +13,7 @@ const getAdvice = async () => {
         console.log(err);
     }
 }
-
 getAdvice();
+
+// Get random advice on DICE ICON Click
+document.querySelector(".dice-icon").addEventListener("click", () => getAdvice())
